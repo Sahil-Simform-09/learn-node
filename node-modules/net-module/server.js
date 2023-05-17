@@ -1,7 +1,14 @@
-const net = require("net");
+// tcp connection
+var net = require('net');
+var server = net.createServer( socket => { 
+   console.log('client connected');
+   
+   socket.write('Hello World!');
+   socket.on('end', function() {
+      console.log('client disconnected');
+   });
+});
 
-const server = net.createServer();
-
-server.listen(80, () => {
-    console.log("server is running on port 8080");
+server.listen(8080, function() { 
+   console.log('server is listening');
 });

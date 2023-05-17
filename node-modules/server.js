@@ -1,6 +1,6 @@
 // tcp connection
-var net = require('net');
-var server = net.createServer( socket => { 
+const net = require('net');
+const server = net.createServer( socket => { 
    console.log('client connected');
    
    socket.write('Hello World!');
@@ -12,4 +12,3 @@ var server = net.createServer( socket => {
 server.listen(8080, function() { 
    console.log('server is listening');
 });
-
