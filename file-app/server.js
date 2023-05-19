@@ -31,6 +31,7 @@ const fs = require('fs/promises');
     };
     const addToFile = async (path, data) => {
         try {
+            //check file exist or not 
             const existingFileHandle = await fs.open(path, 'r');
             existingFileHandle.close();
 
