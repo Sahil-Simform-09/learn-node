@@ -4,7 +4,6 @@
 ## Table of Contents
 - <a href='#desc'>Description</a>
 - <a href='#feature'>Features</a>
-- <a href='#install'>Installation</a>
 - <a href='#use'>Usage</a>
 
 <div id='desc'>
@@ -24,6 +23,7 @@
 
 <div id='use'>
 
+## Usage
 - First run ``server.js`` file.
 - write below commands into ``command.txt`` file to perform **CRUD** operation. **CRUD** means create new file, delete existing file, rename file and add content to file.
 - **Commands**
